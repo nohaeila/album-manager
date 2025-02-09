@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Album</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="addAlbum.html">Ajouter un album</a></li>
+                <li><a href="myAlbums.html">Voir mes albums</a></li>
+                <li><a href="#" onclick="logout()">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Formulaire pour ajouter un album -->
+        <h1>Ajouter un Album</h1>
+         <form id="upload-form" enctype="multipart/form-data">
+            <label for="event">Événement associé (optionnel):</label>
+            
+            <select id="event" name="event_id">
+                <option value="">Aucun événement</option>
+            </select>
+            
+            <!-- Visibilité -->
+             <label for="visibility">Visibilité:</label>
+             
+             <select id="visibility" name="visibility" required>
+                <option value="private">Privé</option>
+                <option value="public">Public</option>
+            </select>
+            
+            <!-- Zone pour ajouter des utilisateurs autorisés -->
+             <div id="authorized-users">
+                <label>Utilisateurs autorisés:</label>
+            <div id="users-list"></div>
+            
+            <button type="button" onclick="addUserField()">+ Ajouter un utilisateur</button>
+        </div>
+        
+        <label for="name">Nom de l'album:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="title">Titre:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="artist">Artiste:</label>
+        <input type="text" id="artist" name="artist" required><br>
+
+        <label for="year">Année:</label>
+        <input type="number" id="year" name="year" value="2024"><br>
+
+        <label for="file">Fichier:</label>
+        <input type="file" id="file" name="file" accept="image/*" required><br>
+        <img id="preview-image" style="display:none; max-width: 200px;">
+
+        <button type="submit">Ajouter l'album</button>
+    </form>
+    
+    <div id="upload-status"></div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Votre site d'album</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

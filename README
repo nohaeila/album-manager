@@ -1,0 +1,63 @@
+### Album Manager ###
+
+## Présentation ##
+
+Album Manager est une application web permettant aux utilisateurs de téléverser, gérer et afficher des images et vidéos. L'objectif est de créer une galerie dynamique où chaque utilisateur peut ajouter et consulter du contenu multimédia.
+
+## Fonctionnalités ## 
+
+- Téléversement d'images et vidéos
+
+- Affichage sous forme de galerie
+
+- Stockage des fichiers sur le serveur
+
+- Gestion des albums (ajout, suppression, modification)
+
+- API REST pour la gestion du contenu
+
+## Technologies utilisées ##
+
+Frontend : ReactJS
+
+Backend : Node.js avec Express
+
+Base de données : SQLite
+
+## Installation ##
+
+# Prérequis #
+
+Node.js 
+
+NPM
+
+Un gestionnaire de base de données SQLite
+
+## Cloner le projet ##
+
+git clone https://github.com...
+cd album-manager
+
+## Installer les dépendances ##
+
+npm install
+
+## Lancer le serveur ##
+
+cd backend
+node server.js
+
+Le serveur démarre sur http://localhost:5000
+
+## Page de connexion##
+Nom d'utilisateur : admin
+Mot de passe : password123
+
+## Améliorations futures ##
+
+- inscription
+
+- Interface plus avancée avec filtres 
+
+- Barre de recherche
