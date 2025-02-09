@@ -36,7 +36,7 @@ Un gestionnaire de base de données SQLite
 
 ## Cloner le projet ##
 
-git clone https://github.com...
+git clone https://github.com/nohaeila/album-manager.git
 cd album-manager
 
 ## Installer les dépendances ##
