@@ -68,8 +68,8 @@ router.get("/", (req, res) => {
       id: row.id,
       title: row.name, // ou un autre attribut pour le titre
       description: row.description || 'Aucune description',
-      filePath: `http://localhost:5000${row.file_path}`, // Assurez-vous que file_path est correct
-      mimetype: row.mimetype // ou un attribut pour le type (image/vidéo)
+      filePath: `http://localhost:5000${row.file_path}`, 
+      mimetype: row.mimetype 
     }));
 
     res.json(mediaList); // Utilise mediaList ici au lieu de rows

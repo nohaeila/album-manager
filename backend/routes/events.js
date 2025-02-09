@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 
 // Ajouter un événement (optionnellement avec un album associé)
 router.post('/', (req, res) => {
-  const { name, date } = req.body; // Par exemple, un événement avec un nom et une date
+  const { name, date } = req.body; 
 
   if (!name || !date) {
     return res.status(400).json({ message: "Nom et date de l'événement sont requis" });
